@@ -1,13 +1,141 @@
 body {
-  margin: 0;
+  margin: 6px 30px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* styling for the navbar */
+
+.navDisplay{
+  display: flex;
+  margin-bottom: 10px;
+}
+.navListDisplay {
+  display: flex;
+  margin-left: auto;
+ 
+}
+
+.navListDisplay ul{
+  list-style: none;
+  display: flex;
+  margin: 0px 80px;
+}
+
+.navbaritem{
+  margin-left: 60px; 
+  
+}
+/* .navbaritemSelected{
+  background-color: #7AA5FA;
+  padding: 5px;
+  color:white;
+  border-radius: 5px;
+} */
+
+
+
+.logo{
+  font-weight: bold;
+  margin-left: 50px;
+  cursor: pointer;
+  display: flex;
+}
+.logo h4{
+  margin:0;
+}
+.Finder{
+  color:blue;
+}
+
+/* css for user card */
+.userCard{
+  background-color: #DDE6F6;
+  border-radius: 30px;
+  margin-right: 200px;
+  padding:15px;
+  display:flex;
+  margin-bottom: 5px;
+
+}
+.repositoryCard{
+  background-color: #DDE6F6;
+  padding: 5px;
+  margin: 2px 0px;
+  
+}
+.description{
+  text-align: center;
+  
+}
+
+/* css for search button */
+.searchInput{
+  background-color:#7AA5FA ;
+  width: 250px;
+  height: 51px;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  padding-left: 10px;
+}
+.searchButton{
+  color: white;
+  background-color: blue;
+  
+ 
+  padding: 18px 20px;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+
+}
+.search{
+  margin-bottom: 5px;
+}
+
+.homeUserButton{
+  background-color: blue;
+  border-radius: 30px;
+  color: white;
+  padding: 5px 10px;
+  margin-right: 70px;
+  border:solid blue 1px ;
+}
+
+.homeRepositoryButton{
+  border-radius: 30px;
+  border: solid #7AA5FA 1px ;
+  color: black;
+  padding: 5px 10px;
+  margin-left: 70px;
+  background-color: white;
+  
+
+}
+
+.homeMain{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+
+}
+
+
+
+.welcomeMessage{
+  display: flex;
+}
+
+.parentContainer{
+  min-height: 98vh;
+}
+.footer{
+  position: fixed;
+  left:0;
+  bottom:0;
+  right:0;
+  text-align: center;
 }
