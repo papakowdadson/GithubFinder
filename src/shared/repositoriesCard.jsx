@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
-function RepositoriesCard() {
+function RepositoriesCard({ repo }) {
   return (
-    <div className='repositoryCard'>
-    <h4>Repo</h4>
-    <h5 className='description'>description</h5>
-   </div>
-  )
+    <div className="repositoryCard">
+      <h4>{repo.name}</h4>
+      <h5 className="description">{repo.description}</h5>
+    </div>
+  );
 }
 
-export default RepositoriesCard
+export default RepositoriesCard;

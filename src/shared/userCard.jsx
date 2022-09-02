@@ -1,15 +1,15 @@
 import React from "react";
 
-function UserCard() {
+function UserCard({users}) {
   return (
     <div className="userCard">
       <div>
-        <img src="" alt="profileimage"></img>
+        <img className="profileImage" src={users.avatar_url} alt="profileimage"></img>
       </div>
-      <div>
-        <h4>username</h4>
+      <div className="userDetails">
+        <h4 className="userLogin">{users.login}</h4>
 
-        <h5>properties</h5>
+        <h5 className="userUrl">{users.url}</h5>
       </div>
     </div>
   );

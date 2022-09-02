@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale; */
   
 }
+/* #root{
+  display: flex;
+  flex-direction: column;
+} */
 
 /* styling for the navbar */
 
@@ -60,6 +64,8 @@ body {
   padding:15px;
   display:flex;
   margin-bottom: 5px;
+  align-items: center;
+  
 
 }
 .repositoryCard{
@@ -131,11 +137,39 @@ body {
 
 .parentContainer{
   min-height: 98vh;
+  display: flex;
+  flex-direction: column;
 }
 .footer{
-  position: fixed;
-  left:0;
-  bottom:0;
-  right:0;
+  text-align: center;
+  margin-top: auto;
+}
+
+.clearButton{
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.profileImage{
+  width:50px ;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.userDetails{
+  margin-left: 10px;
   text-align: center;
 }
+.userLogin{
+  margin: 0px;
+
+}
+.userUrl{
+  margin: 0px;
+
+}
+
+/* Todo:write css for user grid display */
+/* .userGridDisplay{
+
+} */
