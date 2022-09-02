@@ -19,7 +19,7 @@ function Home() {
       
       <img style={{margin:'10px',width:'250px'}} src={homelogo} alt='home page center logo'></img>
       
-      <div>
+      <div className='mainButtons'>
       <button className='homeUserButton' onClick={()=>navigate('user')}>Search Users</button>
       <button className='homeRepositoryButton' onClick={()=>navigate('repositories')}>Search Repositories</button>
       </div>

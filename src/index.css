@@ -60,11 +60,12 @@ body {
 .userCard{
   background-color: #DDE6F6;
   border-radius: 30px;
-  margin-right: 200px;
+  /* margin-right: 200px; */
   padding:15px;
   display:flex;
   margin-bottom: 5px;
   align-items: center;
+  gap: 60px;
   
 
 }
@@ -82,17 +83,16 @@ body {
 /* css for search button */
 .searchInput{
   background-color:#7AA5FA ;
-  width: 250px;
+  max-width: 250px;
   height: 51px;
   border-radius: 10px 0px 0px 10px;
   border: none;
   padding-left: 10px;
+  color: white;
 }
 .searchButton{
   color: white;
   background-color: blue;
-  
- 
   padding: 18px 20px;
   border: none;
   border-radius: 0px 10px 10px 0px;
@@ -170,6 +170,106 @@ body {
 }
 
 /* Todo:write css for user grid display */
-/* .userGridDisplay{
+.userGridDisplay{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 20px; */
 
-} */
+}
+
+@media screen and (max-width:900px){
+  .search form{
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .searchInput{
+    background-color:#7AA5FA ;
+    max-width: 250px;
+    height: 35px;
+    border-radius: 10px 10px;
+    border: none;
+    padding-left: 10px;
+    color: white;
+    margin-bottom: 5px;
+  }
+  .searchButton{
+    color: white;
+    background-color: blue;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 10px 10px;
+    max-width: 170px;
+    
+  
+  }
+  .navListDisplay ul{
+    list-style: none;
+    display: flex;
+    margin:auto;
+  }
+  .navbaritem{
+    margin-left: 15px; 
+    
+  }
+  .logo{
+    font-weight: bold;
+    margin-left: 20px;
+    cursor: pointer;
+    display: flex;
+  }
+  .homeUserButton{
+    background-color: blue;
+    border-radius: 30px;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border:solid blue 1px ;
+  }
+  
+  .homeRepositoryButton{
+    border-radius: 30px;
+    border: solid #7AA5FA 1px ;
+    color: black;
+    padding: 5px 10px;
+    margin-left: 30px;
+    background-color: white;
+    
+  
+  }
+   
+}
+
+@media screen and (max-width:285px){
+  .logo{
+    font-weight: bold;
+    margin-left: 0px;
+    cursor: pointer;
+    display: flex;
+  }
+  .homeUserButton{
+    background-color: blue;
+    border-radius: 30px;
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border:solid blue 1px ;
+  }
+  
+  .homeRepositoryButton{
+    border-radius: 30px;
+    border: solid #7AA5FA 1px ;
+    color: black;
+    padding: 5px 10px;
+    background-color: white;
+  }
+  .mainButtons{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+
+}
