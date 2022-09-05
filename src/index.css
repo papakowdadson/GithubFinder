@@ -70,6 +70,8 @@ body {
 
 }
 .repositoryCard{
+  display: flex;
+  flex-direction: column;
   background-color: #DDE6F6;
   padding: 5px;
   margin: 2px 0px;
@@ -78,6 +80,9 @@ body {
 .description{
   text-align: center;
   
+}
+.iconsPaddingLeft{
+  padding-right: 10px;
 }
 
 /* css for search button */
@@ -166,11 +171,30 @@ body {
 }
 .userUrl{
   margin: 0px;
-
+  text-decoration: none;
+  color:gray;
+  /* text-align: center; */
 }
-
+.repoUrl{
+  display: block;
+  margin: auto;
+  text-decoration: none;
+  color:gray;
+  /* align-self: center;
+  justify-content: center;
+  align-items: center; */
+}
 /* Todo:write css for user grid display */
 .userGridDisplay{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 20px; */
+
+}
+.repoGridDisplay{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
@@ -179,8 +203,43 @@ body {
   gap: 20px; */
 
 }
+.repoCardIcons{
+  display: flex;
+  flex-wrap: wrap;
+  top: auto;
+  bottom:0px ;
+}
 
 @media screen and (max-width:900px){
+  body {
+    margin: 6px 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+    
+  }
+  
+  .userGridDisplay{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 5px;
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 20px; */
+  
+  }
+  .repoGridDisplay{
+    display: grid;
+    grid-template-columns: 1fr ;
+    /* gap: 10px; */
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 20px; */
+  
+  }
+  
   .search form{
     margin-bottom: 5px;
     display: flex;
@@ -203,6 +262,7 @@ body {
     border: none;
     border-radius: 10px 10px;
     max-width: 170px;
+    cursor: pointer;
     
   
   }

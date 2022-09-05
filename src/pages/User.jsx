@@ -10,6 +10,7 @@ function User() {
   const [userName, setUserName] = useState("");
   const {fetchUserData,handleClear,loading,userData}=useContext(UserContext)
 
+  // Todo:use alert context to replace alert and create a component if you want
   const userSubmit = (e) => {
     e.preventDefault();
     if (userName === "") {

@@ -9,10 +9,12 @@ import App from "./App";
 import PageNotFound from "./pages/PageNotFound";
 import UserContextProvider from "./context/UserContext";
 import GithubContextProvider from "./context/GithubContext";
+import AlertContextProvider from "./context/alert/alertContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+  <AlertContextProvider>
     <GithubContextProvider>
       <UserContextProvider>
         <BrowserRouter>
@@ -26,5 +28,6 @@ root.render(
         </BrowserRouter>
       </UserContextProvider>
     </GithubContextProvider>
+    </AlertContextProvider>
   </React.StrictMode>
 );

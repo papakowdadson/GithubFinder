@@ -47,7 +47,7 @@ function Repositories() {
         </div>
       )}
       <div>Repositories</div>
-      <div className="userGridDisplay">
+      <div className="repoGridDisplay">
         {loading ? (
           <Spinner />
         ) : (

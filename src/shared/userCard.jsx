@@ -8,8 +8,7 @@ function UserCard({users}) {
       </div>
       <div className="userDetails">
         <h4 className="userLogin">{users.login}</h4>
-
-        <h5 className="userUrl">{users.url}</h5>
+        <a target="_blank" href={`${users.html_url}`}  rel="noreferrer" className="userUrl">View Profile</a>
       </div>
     </div>
   );
