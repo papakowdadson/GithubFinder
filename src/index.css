@@ -60,7 +60,6 @@ body {
 .userCard{
   background-color: #DDE6F6;
   border-radius: 30px;
-  /* margin-right: 200px; */
   padding:15px;
   display:flex;
   margin-bottom: 5px;
@@ -180,27 +179,18 @@ body {
   margin: auto;
   text-decoration: none;
   color:gray;
-  /* align-self: center;
-  justify-content: center;
-  align-items: center; */
 }
 /* Todo:write css for user grid display */
 .userGridDisplay{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
-  /* display: flex;
-  flex-wrap: wrap;
-  gap: 20px; */
 
 }
 .repoGridDisplay{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  /* display: flex;
-  flex-wrap: wrap;
-  gap: 20px; */
 
 }
 .repoCardIcons{
@@ -216,8 +206,6 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
-    /* -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; */
     
   }
   
