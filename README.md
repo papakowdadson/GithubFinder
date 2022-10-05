@@ -1,4 +1,6 @@
 # GithubFinder
+## Generate and replace token with your personal Github token in the .env
+
 A react app interfaced with github's API to find users and repositories on the git
 
 ## User interface for Github Finder
