@@ -7,6 +7,29 @@ body {
   -moz-osx-font-smoothing: grayscale; */
   
 }
+.modernui{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /* padding: 5px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upScroll{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 8px 8px 24px -16px rgba(66, 68, 90, 1);;
+  right: 10px;
+  bottom: 40px;
+  background-color: #7AA5FA;
+}
 /* #root{
   display: flex;
   flex-direction: column;
@@ -17,6 +40,9 @@ body {
 .navDisplay{
   display: flex;
   margin-bottom: 10px;
+  /* position: fixed; */
+  justify-content: space-between;
+
 }
 .navListDisplay {
   display: flex;
@@ -74,6 +100,8 @@ body {
   background-color: #DDE6F6;
   padding: 5px;
   margin: 2px 0px;
+  border-radius: 15px;
+  box-shadow:inset 8px 8px 24px -23px rgba(66, 68, 90, 1);
   
 }
 .description{
@@ -82,17 +110,22 @@ body {
 }
 .iconsPaddingLeft{
   padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* css for search button */
 .searchInput{
-  background-color:#7AA5FA ;
+  background-color:#DDE6F6 ;
   max-width: 250px;
   height: 51px;
   border-radius: 10px 0px 0px 10px;
   border: none;
   padding-left: 10px;
   color: white;
+  outline: none;
 }
 .searchButton{
   color: white;
@@ -150,8 +183,13 @@ body {
 }
 
 .clearButton{
-  background-color: white;
+  background-color: rgb(245, 51, 51);
+  color:white;
   border: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  float: right;
+
   cursor: pointer;
 }
 .profileImage{
@@ -162,7 +200,7 @@ body {
 }
 .userDetails{
   margin-left: 10px;
-  text-align: center;
+  text-align: left;
 }
 .userLogin{
   margin: 0px;

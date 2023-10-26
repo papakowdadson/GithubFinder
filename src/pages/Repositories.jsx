@@ -4,6 +4,8 @@ import RepositoriesCard from "../shared/repositoriesCard";
 import Footer from "../shared/Footer";
 import { GithubContext } from "../context/GithubContext";
 import { Spinner } from "../component/spinner";
+import AutoScroll from "../component/autoScroll";
+
 
 function Repositories() {
   const [repoName, setRepoName] = useState("");
@@ -20,7 +22,8 @@ function Repositories() {
   };
   return (
     <div className="parentContainer">
-      <Nav></Nav>
+          <h5 style={{textAlign:'center',marginBottom:'5px'}}>Find Project <span className="Finder">Source code</span> around the world on <span className="Finder"> GitHub Finder</span> with ease</h5>
+
       <div className="search">
         <form onSubmit={handleRepoSubmit}>
           <input
@@ -46,7 +49,6 @@ function Repositories() {
           </button>
         </div>
       )}
-      <div>Repositories</div>
       <div className="repoGridDisplay">
         {loading ? (
           <Spinner />
@@ -56,6 +58,7 @@ function Repositories() {
           ))
         )}
       </div>
+      {repositoriesData.length > 0 &&<AutoScroll/>}
       <Footer></Footer>
     </div>
   );

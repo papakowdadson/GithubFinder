@@ -13,28 +13,26 @@ function UserContextProvider({children}) {
         const params = new URLSearchParams({
           q:userName
         });
-        //   try {
+          try {
             const response = await fetch(
               `${process.env.REACT_APP_GITHUB_URL}/search/users?${params}`,
-              {
-                headers: {
-                  Authorization: `token ${process.env.REACT_APP_GITHUB_TOKEN}`,
-                },
-              }
             );
-            const {items} = await response.json();
+            const {items} = await response.json();   
+            console.log('===============================res===============')
             console.log(items);
             setuserData(items);
             setLoading(false);
-        //   } catch (error) {
-        //     console.log(error);
-        //   }
+          } catch (error) {
+            console.log(error);
+          }
         
       };
+
       const handleClear=(e)=>{
         e.preventDefault()
         setuserData([]);
       }
+
   return (
     <UserContext.Provider value={{fetchUserData,handleClear,loading,userData}}>
 

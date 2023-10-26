@@ -4,6 +4,7 @@ import Footer from "../shared/Footer";
 import UserCard from "../shared/userCard";
 import { Spinner } from "../component/spinner";
 import { UserContext } from "../context/UserContext";
+import AutoScroll from "../component/autoScroll";
 
 
 function User() {
@@ -25,7 +26,7 @@ function User() {
 
   return (
     <div className="parentContainer">
-      <Nav></Nav>
+          <h5 style={{textAlign:'center',marginBottom:'5px'}}>Developers can now find colleagues around the world on <span className="Finder"> GitHub Finder</span> with ease</h5>
       <div className="search">
         <form onSubmit={userSubmit}>
           <input
@@ -56,7 +57,7 @@ function User() {
         ))
       )}
       </div>
-      <div>Enjoy.....</div>
+      {userData.length > 0 &&<AutoScroll/>}
       <Footer></Footer>
     </div>
   );

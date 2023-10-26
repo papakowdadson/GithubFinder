@@ -17,18 +17,19 @@ function GithubContextProvider({children}) {
 
 
     const fetchRepoData = async (repoName) => {
+      console.log('==============fetching repos============')
         setLoading();
         const params = new URLSearchParams({
           q:repoName
         });
-        //   try {
+          try {
             const response = await fetch(
               `${process.env.REACT_APP_GITHUB_URL}/search/repositories?${params}`,
-              {
-                headers: {
-                  Authorization: `token ${process.env.REACT_APP_GITHUB_TOKEN}`,
-                },
-              }
+              // {
+              //   headers: {
+              //     Authorization: `token ${process.env.REACT_APP_GITHUB_TOKEN}`,
+              //   },
+              // }
             );
             const {items} = await response.json();
             console.log(items);
@@ -36,9 +37,9 @@ function GithubContextProvider({children}) {
                 type:'GET_REPO',
                 payload:items
             })
-        //   } catch (error) {
-        //     console.log(error);
-        //   }
+          } catch (error) {
+            console.log(error);
+          }
         
       };
       const handleClearRepo=()=>dispatch({

@@ -21,21 +21,30 @@ function RepositoriesCard({ repo }) {
         Visit Repository
       </a>
       <div className="repoCardIcons">
+        
         <div className="iconsPaddingLeft">
-          <FaUserClock />
-          {repo.created_at}
+          <div className="modernui" style={{ backgroundColor: "rgb(247, 192, 201)" }}>
+            <FaCodeBranch />
+          </div>
+          <p style={{margin:'0px',color:'gray',fontSize:'14px'}}>{repo.forks_count}</p>
         </div>
         <div className="iconsPaddingLeft">
-          <FaCodeBranch />
-          {repo.forks_count}
+          <div className="modernui" style={{ backgroundColor: "rgb(162, 245, 162)" }}>
+            <FaUsers />
+          </div>
+          <p style={{margin:'0px',color:'gray',fontSize:'14px'}}>{repo.watchers}</p>
         </div>
         <div className="iconsPaddingLeft">
-          <FaUsers />
-          {repo.watchers}
+          <div className="modernui" style={{ backgroundColor: "rgb(240, 155, 129)" }}>
+            <FaExclamation />
+          </div>
+          <p style={{margin:'0px',color:'gray',fontSize:'14px'}}>{repo.open_issues_count}</p>
         </div>
-        <div>
-          <FaExclamation />
-          {repo.open_issues_count}
+        <div className="iconsPaddingLeft">
+          <div className="modernui" style={{ backgroundColor: "rgb(241, 241, 161)" }}>
+            <FaUserClock />
+          </div>
+          <p style={{margin:'0px',color:'gray',fontSize:'14px'}}>{ repo.created_at.split("T")[0]}</p>
         </div>
       </div>
     </div>
