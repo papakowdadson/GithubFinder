@@ -4,7 +4,6 @@ import {
   FaUserClock,
   FaUsers,
   FaCodeBranch,
-  FaCoins,
 } from "react-icons/fa";
 
 function RepositoriesCard({ repo }) {

@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import Nav from "../component/Nav";
 import Footer from "../shared/Footer";
 import UserCard from "../shared/userCard";
 import { Spinner } from "../component/spinner";

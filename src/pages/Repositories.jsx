@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import Nav from "../component/Nav";
 import RepositoriesCard from "../shared/repositoriesCard";
 import Footer from "../shared/Footer";
 import { GithubContext } from "../context/GithubContext";

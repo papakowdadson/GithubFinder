@@ -1,5 +1,4 @@
 import React from 'react'
-import Nav from '../component/Nav'
 import {useNavigate} from 'react-router-dom'
 import Footer from '../shared/Footer';
 import homelogo from '../assets/homelogo.svg';
