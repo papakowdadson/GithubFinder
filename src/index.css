@@ -1,77 +1,56 @@
 body {
-  margin: 6px 30px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
-  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
 }
-.modernui{
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  /* padding: 5px; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+a{
+  text-decoration: none;
+  color: inherit;
 }
-.upScroll{
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 8px 8px 24px -16px rgba(66, 68, 90, 1);;
-  right: 10px;
-  bottom: 40px;
-  background-color: #7AA5FA;
+#root{
+  max-width:1200px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  display: grid;
+  grid-template-rows:50px 1fr 50px;
 }
-/* #root{
-  display: flex;
-  flex-direction: column;
-} */
+
 
 /* styling for the navbar */
 
 .navDisplay{
   display: flex;
   margin-bottom: 10px;
-  /* position: fixed; */
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  gap: 10px;
   justify-content: space-between;
-
 }
 .navListDisplay {
   display: flex;
   margin-left: auto;
  
 }
-
 .navListDisplay ul{
   list-style: none;
   display: flex;
-  margin: 0px 80px;
+  margin: 0px 0px;
+  gap: 20px;
+  justify-content: space-between;
 }
-
 .navbaritem{
-  margin-left: 60px; 
-  
+  font-weight: 500;
 }
-/* .navbaritemSelected{
-  background-color: #7AA5FA;
-  padding: 5px;
-  color:white;
-  border-radius: 5px;
-} */
-
 
 
 .logo{
   font-weight: bold;
-  margin-left: 50px;
   cursor: pointer;
   display: flex;
 }
@@ -108,6 +87,29 @@ body {
   text-align: center;
   
 }
+.modernui{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /* padding: 5px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upScroll{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 8px 8px 24px -16px rgba(66, 68, 90, 1);;
+  right: 10px;
+  bottom: 40px;
+  background-color: #7AA5FA;
+}
 .iconsPaddingLeft{
   padding-right: 10px;
   display: flex;
@@ -140,22 +142,23 @@ body {
 }
 
 .homeUserButton{
-  background-color: blue;
-  border-radius: 30px;
+  background: linear-gradient(to right, blue, #7AA5FA, blue);
+  border-radius: 10px;
   color: white;
-  padding: 5px 10px;
-  margin-right: 70px;
-  border:solid blue 1px ;
+  padding: 10px 20px;
+  border:solid blue 2px ;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .homeRepositoryButton{
-  border-radius: 30px;
-  border: solid #7AA5FA 1px ;
+  border-radius: 10px;
+  border: solid #7AA5FA 2px ;
   color: black;
-  padding: 5px 10px;
-  margin-left: 70px;
+  padding: 10px 20px;
   background-color: white;
-  
+  font-weight: 500;
+  cursor: pointer;
 
 }
 
@@ -163,19 +166,31 @@ body {
   display: flex;
   flex-direction: column;
   place-items: center;
-
 }
-
-
-
 .welcomeMessage{
   display: flex;
+  justify-content: space-around;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+.welcomeMessage h1{
+  margin: 0px;
+}
+.homeLogo{
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  width: 250px;
+}
+.mainButtons{
+  display: flex;
+  gap: 20px;
+
 }
 
+
 .parentContainer{
-  min-height: 98vh;
-  display: flex;
-  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .footer{
   text-align: center;
@@ -239,14 +254,7 @@ body {
 }
 
 @media screen and (max-width:900px){
-  body {
-    margin: 6px 10px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    
-  }
-  
+ 
   .userGridDisplay{
     display: grid;
     grid-template-columns: 1fr ;
@@ -307,55 +315,33 @@ body {
     cursor: pointer;
     display: flex;
   }
-  .homeUserButton{
-    background-color: blue;
-    border-radius: 30px;
-    color: white;
-    padding: 5px 10px;
-    margin-right: 10px;
-    border:solid blue 1px ;
-  }
+ 
   
-  .homeRepositoryButton{
-    border-radius: 30px;
-    border: solid #7AA5FA 1px ;
-    color: black;
-    padding: 5px 10px;
-    margin-left: 30px;
-    background-color: white;
-    
   
-  }
    
 }
 
-@media screen and (max-width:285px){
+@media screen and (max-width:480px){
   .logo{
     font-weight: bold;
     margin-left: 0px;
     cursor: pointer;
     display: flex;
   }
-  .homeUserButton{
-    background-color: blue;
-    border-radius: 30px;
-    color: white;
-    padding: 5px 10px;
-    margin-bottom: 10px;
-    border:solid blue 1px ;
+  .welcomeMessage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
-  .homeRepositoryButton{
-    border-radius: 30px;
-    border: solid #7AA5FA 1px ;
-    color: black;
-    padding: 5px 10px;
-    background-color: white;
-  }
+ 
   .mainButtons{
     display: flex;
     flex-direction: column;
-    place-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
   }
 
 }

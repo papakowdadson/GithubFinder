@@ -36,7 +36,7 @@ function UserContextProvider({children}) {
   return (
     <UserContext.Provider value={{fetchUserData,handleClear,loading,userData}}>
 
-    <div>{children}</div>
+    <>{children}</>
     </UserContext.Provider>
   )
 }

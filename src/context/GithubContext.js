@@ -48,7 +48,7 @@ function GithubContextProvider({children}) {
   return (
     <GithubContext.Provider value={{fetchRepoData,handleClearRepo,loading:state.loading,repositoriesData:state.repositories}}>
 
-    <div>{children}</div>
+    <>{children}</>
     </GithubContext.Provider>
   )
 }

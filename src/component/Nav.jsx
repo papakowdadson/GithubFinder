@@ -2,22 +2,17 @@ import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 
 function Nav() {
-  // const [navItem, setnavItem] = useState("");
   let navigate = useNavigate();
 
-  
-  
 
   const navbaritemSelected = {
-    backgroundColor: "#7AA5FA",
-    padding: "5px",
+    background: "linear-gradient(to right, blue, #7AA5FA, blue)",    padding: "5px 10px",
     borderRadius: "5px",
     textDecoration: "none",
     color: "white",
   };
   const nabaritemUnselected = {
     textDecoration: "none",
-    color: "black",
   };
   // Todo work on item higlighting
   return (
@@ -32,7 +27,6 @@ function Nav() {
             <li className={"navbaritem"}>
               <NavLink
                 to="/user"
-                // onClick={()=>setnavItem('User')}
                 style={({isActive})=>isActive ? navbaritemSelected : nabaritemUnselected
                 }
               >
@@ -42,7 +36,6 @@ function Nav() {
             <li className={"navbaritem"}>
               <NavLink
                 to="/repositories"
-                // onClick={()=>setnavItem('repositories')}
                 style={
                   ({isActive})=>isActive? navbaritemSelected: nabaritemUnselected
                 }

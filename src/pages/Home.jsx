@@ -1,32 +1,36 @@
-import React from 'react'
-import {useNavigate} from 'react-router-dom'
-import Footer from '../shared/Footer';
-import homelogo from '../assets/homelogo.svg';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import homelogo from "../assets/homelogo.svg";
 
 function Home() {
-  let navigate=useNavigate();
+  let navigate = useNavigate();
   return (
-    <div className='parentContainer'>
-      {/* <Nav></Nav> */}
-      <main >
-      <div className='homeMain'>
-      <div className='welcomeMessage'>
-      <h4>Welcome to Github </h4><h4 className="Finder"> Finder</h4>
+    <main className="parentContainer">
+      <div className="homeMain">
+        <div className="welcomeMessage">
+          <h1>Welcome to Github </h1>
+          <h1 className="Finder">Finder</h1>
+        </div>
+        <p>Find users and repositories on Github with ease</p>
+        <img
+          src={homelogo}
+          alt="home page center logo"
+          className="homeLogo"
+        ></img>
+        <div className="mainButtons">
+          <button className="homeUserButton" onClick={() => navigate("/user")}>
+            Search Users
+          </button>
+          <button
+            className="homeRepositoryButton"
+            onClick={() => navigate("/repositories")}
+          >
+            Search Repositories
+          </button>
+        </div>
       </div>
-      <p>Find users and repositories on Github with ease</p>
-      
-      
-      <img style={{margin:'10px',width:'250px'}} src={homelogo} alt='home page center logo'></img>
-      
-      <div className='mainButtons'>
-      <button className='homeUserButton' onClick={()=>navigate('/user')}>Search Users</button>
-      <button className='homeRepositoryButton' onClick={()=>navigate('/repositories')}>Search Repositories</button>
-      </div>
-      </div>
-      </main>
-      <Footer></Footer>
-    </div>
-  )
+    </main>
+  );
 }
 
-export default Home
+export default Home;

@@ -58,7 +58,6 @@ function Repositories() {
         )}
       </div>
       {repositoriesData.length > 0 &&<AutoScroll/>}
-      <Footer></Footer>
     </div>
   );
 }

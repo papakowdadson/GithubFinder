@@ -11,6 +11,7 @@ import UserContextProvider from "./context/UserContext";
 import GithubContextProvider from "./context/GithubContext";
 import AlertContextProvider from "./context/alert/alertContext";
 import Nav from "./component/Nav"
+import Footer from "./shared/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -31,5 +32,6 @@ root.render(
       </UserContextProvider>
     </GithubContextProvider>
     </AlertContextProvider>
+    <Footer></Footer>
   </React.StrictMode>
 );

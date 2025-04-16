@@ -57,7 +57,6 @@ function User() {
       )}
       </div>
       {userData.length > 0 &&<AutoScroll/>}
-      <Footer></Footer>
     </div>
   );
 }
