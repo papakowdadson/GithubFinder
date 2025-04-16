@@ -1,28 +1,27 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #333;
 }
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
-#root{
-  max-width:1200px;
+#root {
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   height: 100vh;
   display: grid;
-  grid-template-rows:50px 1fr 50px;
+  grid-template-rows: 50px 1fr 50px;
 }
-
 
 /* styling for the navbar */
 
-.navDisplay{
+.navDisplay {
   display: flex;
   margin-bottom: 10px;
   padding-left: 10px;
@@ -35,59 +34,53 @@ a{
 .navListDisplay {
   display: flex;
   margin-left: auto;
- 
 }
-.navListDisplay ul{
+.navListDisplay ul {
   list-style: none;
   display: flex;
   margin: 0px 0px;
   gap: 20px;
   justify-content: space-between;
 }
-.navbaritem{
+.navbaritem {
   font-weight: 500;
 }
 
-
-.logo{
+.logo {
   font-weight: bold;
   cursor: pointer;
   display: flex;
 }
-.logo h4{
-  margin:0;
+.logo h4 {
+  margin: 0;
 }
-.Finder{
-  color:blue;
+.Finder {
+  color: blue;
 }
 
 /* css for user card */
-.userCard{
-  background-color: #DDE6F6;
+.userCard {
+  background-color: #dde6f6;
   border-radius: 30px;
-  padding:15px;
-  display:flex;
+  padding: 15px;
+  display: flex;
   margin-bottom: 5px;
   align-items: center;
   gap: 60px;
-  
-
 }
-.repositoryCard{
+.repositoryCard {
   display: flex;
   flex-direction: column;
-  background-color: #DDE6F6;
+  background-color: #dde6f6;
   padding: 5px;
   margin: 2px 0px;
   border-radius: 15px;
-  box-shadow:inset 8px 8px 24px -23px rgba(66, 68, 90, 1);
-  
+  box-shadow: inset 8px 8px 24px -23px rgba(66, 68, 90, 1);
 }
-.description{
+.description {
   text-align: center;
-  
 }
-.modernui{
+.modernui {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -96,7 +89,7 @@ a{
   justify-content: center;
   align-items: center;
 }
-.upScroll{
+.upScroll {
   position: fixed;
   width: 40px;
   height: 40px;
@@ -105,12 +98,12 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 8px 8px 24px -16px rgba(66, 68, 90, 1);;
+  box-shadow: 8px 8px 24px -16px rgba(66, 68, 90, 1);
   right: 10px;
   bottom: 40px;
-  background-color: #7AA5FA;
+  background-color: #7aa5fa;
 }
-.iconsPaddingLeft{
+.iconsPaddingLeft {
   padding-right: 10px;
   display: flex;
   flex-direction: column;
@@ -119,8 +112,8 @@ a{
 }
 
 /* css for search button */
-.searchInput{
-  background-color:#DDE6F6 ;
+.searchInput {
+  background-color: #dde6f6;
   max-width: 250px;
   height: 51px;
   border-radius: 10px 0px 0px 10px;
@@ -129,214 +122,180 @@ a{
   color: black;
   outline: none;
 }
-.searchButton{
+.searchButton {
   color: white;
   background-color: blue;
   padding: 18px 20px;
   border: none;
   border-radius: 0px 10px 10px 0px;
-
+  font-weight: 500;
 }
-.search{
-  margin-bottom: 5px;
+.search {
+  margin-bottom: 1.5rem;
 }
 
-.homeUserButton{
-  background: linear-gradient(to right, blue, #7AA5FA, blue);
+.homeUserButton {
+  background: linear-gradient(to right, blue, #7aa5fa, blue);
   border-radius: 10px;
   color: white;
   padding: 10px 20px;
-  border:solid blue 2px ;
+  border: solid blue 2px;
   font-weight: 500;
   cursor: pointer;
 }
 
-.homeRepositoryButton{
+.homeRepositoryButton {
   border-radius: 10px;
-  border: solid #7AA5FA 2px ;
+  border: solid #7aa5fa 2px;
   color: black;
   padding: 10px 20px;
   background-color: white;
   font-weight: 500;
   cursor: pointer;
-
 }
 
-.homeMain{
+.homeMain {
   display: flex;
   flex-direction: column;
   place-items: center;
 }
-.welcomeMessage{
+.welcomeMessage {
   display: flex;
   justify-content: space-around;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
 }
-.welcomeMessage h1{
+.welcomeMessage h1 {
   margin: 0px;
 }
-.homeLogo{
+.homeLogo {
   margin-top: 2.5rem;
   margin-bottom: 2rem;
   width: 250px;
 }
-.mainButtons{
+.mainButtons {
   display: flex;
   gap: 20px;
-
 }
 
-
-.parentContainer{
+.parentContainer {
   padding-left: 10px;
   padding-right: 10px;
 }
-.footer{
+.footer {
   text-align: center;
   margin-top: auto;
 }
 
-.clearButton{
+.clearButton {
+  display: block;
+  position: relative;
   background-color: rgb(245, 51, 51);
-  color:white;
+  color: white;
   border: none;
   border-radius: 10px;
   padding: 5px 15px;
-  float: right;
-
+  margin-left: auto;
   cursor: pointer;
+  margin-bottom: 10px;
 }
-.profileImage{
-  width:50px ;
+.profileImage {
+  width: 50px;
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
 }
-.userDetails{
+.userDetails {
   margin-left: 10px;
   text-align: left;
 }
-.userLogin{
+.userLogin {
   margin: 0px;
-
 }
-.userUrl{
+.userUrl {
   margin: 0px;
   text-decoration: none;
-  color:gray;
+  color: gray;
   /* text-align: center; */
 }
-.repoUrl{
+
+.repositoryPageTitle {
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.repoUrl {
   display: block;
   margin: auto;
   text-decoration: none;
-  color:gray;
+  color: gray;
 }
 /* Todo:write css for user grid display */
-.userGridDisplay{
+.userGridDisplay {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
-
 }
-.repoGridDisplay{
+.repoGridDisplay {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-
 }
-.repoCardIcons{
+.repoCardIcons {
   display: flex;
   flex-wrap: wrap;
   top: auto;
-  bottom:0px ;
+  bottom: 0px;
 }
 
-@media screen and (max-width:900px){
- 
-  .userGridDisplay{
+@media screen and (max-width: 900px) {
+  .userGridDisplay {
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     gap: 5px;
     /* display: flex;
     flex-wrap: wrap;
     gap: 20px; */
-  
   }
-  .repoGridDisplay{
+  .repoGridDisplay {
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     /* gap: 10px; */
     /* display: flex;
     flex-wrap: wrap;
     gap: 20px; */
-  
   }
-  
-  .search form{
-    margin-bottom: 5px;
-    display: flex;
-    flex-direction: column;
-  }
-  .searchInput{
-    background-color:#7AA5FA ;
-    max-width: 250px;
-    height: 35px;
-    border-radius: 10px 10px;
-    border: none;
-    padding-left: 10px;
-    color: white;
-    margin-bottom: 5px;
-  }
-  .searchButton{
-    color: white;
-    background-color: blue;
-    padding: 10px 12px;
-    border: none;
-    border-radius: 10px 10px;
-    max-width: 170px;
-    cursor: pointer;
-    
-  
-  }
-  .navListDisplay ul{
+
+  .navListDisplay ul {
     list-style: none;
     display: flex;
-    margin:auto;
+    margin: auto;
   }
-  .navbaritem{
-    margin-left: 15px; 
-    
+  .navbaritem {
+    margin-left: 15px;
   }
-  .logo{
+  .logo {
     font-weight: bold;
     margin-left: 20px;
     cursor: pointer;
     display: flex;
   }
- 
-  
-  
-   
 }
 
-@media screen and (max-width:480px){
-  .logo{
+@media screen and (max-width: 480px) {
+  .logo {
     font-weight: bold;
     margin-left: 0px;
     cursor: pointer;
     display: flex;
   }
-  .welcomeMessage{
+  .welcomeMessage {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  
- 
-  .mainButtons{
+  .mainButtons {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -344,4 +303,20 @@ a{
     gap: 10px;
   }
 
+  .search form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .searchInput {
+    width: 100%;
+    border-radius: 10px 10px;
+    max-width: 100%;
+  }
+  .searchButton {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 10px 10px;
+  }
 }

@@ -21,7 +21,7 @@ function Repositories() {
   };
   return (
     <div className="parentContainer">
-          <h5 style={{textAlign:'center',marginBottom:'5px'}}>Find Project <span className="Finder">Source code</span> around the world on <span className="Finder"> GitHub Finder</span> with ease</h5>
+          <h2 className="repositoryPageTitle" >Find Project <span className="Finder">Source code</span> around the world on <span className="Finder"> GitHub Finder</span> with ease</h2>
 
       <div className="search">
         <form onSubmit={handleRepoSubmit}>
