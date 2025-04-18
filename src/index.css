@@ -80,7 +80,6 @@ a {
   text-align: center;
   word-wrap: break-word;      /* Allows long words to be broken */
   overflow-wrap: break-word;  /* Modern browsers */
-  max-width: 100%;           /* Ensures content stays within container */
   white-space: normal; 
 }
 .modernui {
@@ -213,13 +212,13 @@ a {
   text-align: left;
 }
 .userLogin {
-  margin: 0px;
+  margin: 5px 0px;
+  text-transform: capitalize;
 }
 .userUrl {
   margin: 0px;
   text-decoration: none;
   color: gray;
-  /* text-align: center; */
 }
 
 .repositoryPageTitle {
@@ -247,8 +246,7 @@ a {
 .repoCardIcons {
   display: flex;
   flex-wrap: wrap;
-  top: auto;
-  bottom: 0px;
+  margin-top: 15px;
 }
 
 @media screen and (max-width: 900px) {
@@ -256,17 +254,11 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     gap: 5px;
-    /* display: flex;
-    flex-wrap: wrap;
-    gap: 20px; */
   }
   .repoGridDisplay {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
-    /* display: flex;
-    flex-wrap: wrap;
-    gap: 20px; */
   }
 
   .navListDisplay ul {
